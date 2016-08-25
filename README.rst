@@ -35,5 +35,5 @@ Usage
 			# Enter a critical section and ensure that the object is the latest version.
 			# Use the corresponding database row as the synchronization monitor.
 			lock_object(user)
-			form = UserForm(data=request.METHOD)
+			form = UserForm(data=request.POST)
 			form.save()
